@@ -1,4 +1,5 @@
 const $=id=>document.getElementById(id),colors=['#008b82','#cf7143','#526dc3','#aa5395','#b19a22','#30565d','#8d6a48','#64884b'];
+$('countrySelect').onchange=()=>{if(data)$('addCountry').onclick()};
 const names={JPN:'日本',GBR:'英国',CAN:'カナダ',CHE:'スイス',AUS:'オーストラリア',NZL:'ニュージーランド',CHN:'中国',IND:'インド',SWE:'スウェーデン',NOR:'ノルウェー',DNK:'デンマーク',THA:'タイ',MYS:'マレーシア',SGP:'シンガポール',HKG:'香港',KOR:'韓国',IDN:'インドネシア',DEU:'ドイツ',FRA:'フランス',ITA:'イタリア',BRA:'ブラジル',USA:'米国',MEX:'メキシコ'};
 const safe=new Set(['JPN','GBR','CAN','CHE','AUS','NZL','CHN','IND','SWE','NOR','DNK','THA','MYS','SGP','HKG','KOR','IDN','USA']);
 const euro=new Set(['DEU','FRA','ITA','ESP','PRT','NLD','BEL','AUT','FIN','IRL','LUX']);
